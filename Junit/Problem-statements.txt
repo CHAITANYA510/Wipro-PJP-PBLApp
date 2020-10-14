@@ -1,0 +1,68 @@
+-------------------Junit with eclipse----------------------
+
+[Junit Introduction Using assertEquals method]
+1.
+ Create an abstract class Compartment to represent a rail coach.
+Provide an abstract function notice in this class.
+public abstract String notice();
+Derive FirstClass, Ladies, General, Luggage classes from the
+compartment class. Override the notice function in each of them to
+print notice message that is suitable to the specific type of
+compartment.
+Create a class TestCompartment.Write main function to do the
+following:
+Declare an array of Compartment of size 10.
+Create a compartment of a type as decided by a randomly generated
+integer in the range 1 to 4.
+Check the polymorphic behavior of the notice method.
+[i.e based on the random number genererated, the first
+compartment can be Luggage, the second one could be Ladies and so
+on..]
+
+-------------------Assert Methods and Annotations----------------------
+
+[Assert Methods and Annotations]
+1.  
+ Create a Project named JunitLearning
+1. Create a package named com.wipro.task
+2. Copy the given class into the com.wipro.task package
+package com.wipro.task;
+import java.util.Arrays;
+public class DailyTasks {
+public String doStringConcat (String s1, String s2) {
+return s1+" "+s2;
+}
+public int[] sortValues(int arr[]){
+Arrays.sort(arr);
+return arr;
+}
+public boolean checkPresence(String str,String a){
+return str.contains(a);
+}
+}
+3. Create a new package called com.wipro.test;
+4. Create a class named TestStringConcat to test the functionality
+of doStringConcat method [hint: use assertEquals method]
+
+
+[Packages user defined package]
+1
+ Create a class named TestSort to test the functionality of the
+sortValues method [hint: use assertArrayEquals method]
+
+2
+ Create a class named TestCheckPresence to test the functionality
+of sortValues method [hint: use assertTrue and assertFalse
+methods]
+
+
+
+-------------------Test suite----------------------
+
+[Interfaces]
+1.
+ Create a test suite for all the 3 classes created under the
+com.wipro.test package and execute the same
+
+
+
