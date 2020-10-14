@@ -1,0 +1,98 @@
+------------------- Introduction to Servlets----------------------
+
+[Junit Introduction Using assertEquals method]
+1. Write a servlet to display “My First Servlet program” on browser.
+
+-------------------Servlets-Get and Post Requests----------------------
+
+1
+ Create a servlet that prints all the request headers it receives,
+along with their associated values.
+
+2
+ Write a servlet to show all the parameters sent to the servlet
+via either GET or POST.
+Note: consider all types of form fields.
+
+
+------------------- Servlet Config and Servlet Context----------------------
+
+1.
+ Write a Servlet Program that prints the Servlet Config and
+Servlet Context Parameters
+
+
+--------------------Servlet - Cookies and Session Management-------------------
+1
+ Create a Servlet that recognizes the first time visitor to a web
+application and responds by saying "Welcome, you are visiting for
+the first time".
+When the page is visited for the second time, it should say
+'Welcome Back'.
+
+2
+ Display all the cookies available for the given application in a
+tabular format.
+If there are no cookies available with the application, display
+“No Cookies”.
+
+3
+ Using session tracking, display how many times the particular
+client has visited the page.
+Display the session id and other details about the session object
+
+
+---------------------- Introduction to JSP------------------------
+1
+ Create a HTML Page, which asks the user to enter a number in a
+textbox. On clicking the submit button, it places the request to a
+Servlet. The Servlet generates all Prime numbers which are less
+than the given number and adds them to an ArrayList and forwards
+the control to a JSP page. The JSP page iterates through the
+ArrayList and prints them in a tabular format.
+
+2
+ Write a JSP program which when invoked will print today’s date
+and time. [Hint: Use JSP expressions here] 
+
+3
+ Write a jsp program that prints a table with numbers and their
+corresponding factorial values.
+
+
+---------------------JavaBeans in JSP---------------
+
+[JSP]
+1
+ Create a bean that represents information needed to
+calculate an employee's salary. Has String (employee
+name) and int (employee ID) properties. Create an
+application to demonstrate automatically filling in bean
+properties from request parameters.
+
+[Servlet,JSP,JavaBeans]
+2
+ Create a servlet that forwards the request to one of
+three different JSP pages, depending on the value of the
+operation request parameter. Say if input is <10 then
+page 1 or greater than 10 and less than 99 then page 2
+otherwise error page
+
+[HTML,SQL,Servlet,JSP]
+3
+ a. Create an emp table in the database with fields
+name, id and designation.
+b. Create a HTML file with fields name, id and
+designation. Make sure that the textfields have the same
+name as name, id and designation.
+c. Create a javabean with fields name, id and
+designation.
+d. On click of the submit button of the HTML, invoke a
+jsp page which will extract the values that were given by
+the HTML page and it invokes a servlet.
+e. The Servlet will make a connection to the database and
+store the value in the table.
+f. Connection to the database should have been
+established using a separate java class.
+g. You can enhance the program by including more features
+like deletion, updation and selecting all records.
