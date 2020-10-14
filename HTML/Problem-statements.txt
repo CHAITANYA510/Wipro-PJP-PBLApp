@@ -1,0 +1,143 @@
+-------------------Layout Tags and Semantic Tags----------------------
+
+[Layout Tags]
+1
+ Create a webpage to display your name with every letter having a
+different heading size. Layout Tags
+
+[Semantic Tags]
+2
+ Create a webpage that displays two lists with any information you
+want. One list should be an ordered list and the other list should
+be an unordered list.
+
+3
+ We need to have a HTML containing three lists.
+List 1 will contain the following :
+1) One
+a. Uno
+b. Hanna
+2) Two
+a. Dos
+b. Dool
+3) Three
+a. Tres
+b. Set
+List 2 will contain :
+• Chevy
+o Cavilier
+o Malibu
+• Ford
+o Escort
+o F100
+• Mazda
+o 626
+List 3 should be of two types : Fruits and Vegetables
+A. Fruits
+ i. Apples,Oranges,Pears,Banana
+B. Vegetables
+ i. Corn
+ a)On the cob
+ b)Cream
+ ii. Carrots
+ iii. Green Beans
+
+4
+ Create a page that will display an image that has a border of
+size 2, a width of 200, and a height of 200.
+
+5
+ Create a page which contains two links- one at the top and one at
+the bottom. On clicking the top link, the page has to scroll down
+to the bottom of the page where bottom link is present. On
+clicking the bottom link, the page has to scroll up to the top of
+the page.
+
+
+-------------------Tables, Forms and Frames------------------
+
+[Tables]
+1
+ Write a HTML program to display the table having the
+columns(highlighted) as Decimal ,English, Spanish, Korean, Binary
+.
+Following are the data to be in each rows respective of their
+columns :
+Decimals : {1,2,3,4,5}
+English : {one,two,three,four,five}
+Spanish:{uno,dos,tres,quarto,cinco}
+Korean:{hanna,dool,set,net,daset}
+Binary:{0001,0010,0011,0100,0101}
+Each element is the data which will be our rows for the
+corresponding columns 
+
+[Forms]
+2
+ Write a HTML program to create visitor information capture. The
+page should have the heading “Visitors information” and should ask
+the following information from the user :
+• Email address using a textbox ,
+• User’s interest web for research or purchase as check box.
+• Occupation as drop down box and preselected value should be
+given as (select one).
+• Check “want us to send you junk emails?” and the options given
+are “absolutely” and “no way man” using the radio button.
+• A horizontal line divides the heading and the body content. Once
+all the inputs are given, the user should be able to submit or
+reset.
+• This whole form should be tabulated using table tag. 
+
+3
+ Write a HTML program to create an online registration form which
+captures the following data:
+Username, Password, Confirm password, Name using text boxes.
+Gender by radio buttons.
+Address should be taken by multiple line inputs from the user.
+Finally the Profession should be provided by selecting from the
+drop down box.
+Make sure the contents of the page is aligned in the middle.
+
+[Frame]
+4
+ Write a HTML program to display the HTML page as described below:
+• Create a page which is divided in 3 parts. 30% horizontally on
+top and the rest 70 % bellow is split vertically in 2 parts again
+30 % and 70% each
+• The Top header frame should display an image
+• Left side below frame should have a menu of “Font” and
+“Alignment”.
+• If we click on “Font” link a different page which contains 5
+different fonts with font’s names should be shown on the RHS
+• If we click on “Alignment” link a different page which contains
+a different alignment type should be shown on the RHS frame.
+• For this create 2 webpages named Font and Alignment.
+• Font page should have 5 names of different fonts displayed like
+this
+ Agency FB
+ Cambria
+ Elephant
+• Alignment page should have sample text aligned to different
+alignments
+
+
+-------------------------Style and div tags-----------------------
+
+[Style tag]
+1
+ Apply the style, font: Times New Roman in the Hands-on
+Assignment 1 on Tables 
+
+[div tag]
+2
+ Group the Hands-on Assignment 2 and 3 on Forms to a single web
+page providing separate div tags for each forms. 
+
+-------------------------Introduction to HTML5-----------------------
+
+[HTML 5]
+1
+ Apply the HTML 5 attributes in the Hands-on Assignment 2 and 3 on
+Forms
+Sample Attributes : email, placeholder, required, multiple.
+
+

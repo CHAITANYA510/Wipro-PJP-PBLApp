@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <meta charset="utf=8">
+        <title>Problem 3</title> 
+    </head>
+    <body>
+        <h1 align="center">Registration</h1>
+        <table border="0" align="center">
+            <form name="form1" action="Servlet2" method="POST">
+                <tr>
+                    <td> 
+                        <label for="uname">Username:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="uname">
+                    </td>
+                </tr>
+                <tr>
+                    <td> 
+                        <label for="upwd">Password:</label>
+                    </td>
+                    <td>
+                        <input type="password" id="upwd">
+                    </td>
+                </tr>
+                <tr>
+                    <td> 
+                        <label for="upwdc">Confirm Password:</label>
+                    </td>
+                    <td>
+                        <input type="password" id="upwdc">
+                    </td>
+                </tr>
+                <tr>
+                    <td> 
+                        <label for="gender">Gender:</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="gender" name="gender" value="Male">Male
+                        <input type="radio" name="gender" value="Female">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="address">Address:</label>
+                    </td>
+                    <td>
+                        <textarea  id="address" rows="4" cols="30">Enter address here...</textarea> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="profession">Profession:</label>
+                    </td>
+                    <td>
+                        <select name="profession" id="profession" size="1">
+                            <option value="Admin">Admin</option>
+                            <option value="Professional">Professional</option>
+                            <option value="Student">Student</option>
+                            <option value="Guest">Guest</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="submit" value="Submit">
+                        <input type="reset">
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </body>
+</html>

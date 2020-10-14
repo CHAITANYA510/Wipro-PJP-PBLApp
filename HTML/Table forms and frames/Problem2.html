@@ -1,0 +1,72 @@
+<!--
+    Write a HTML program to create visiter information capture. The page should have the heading "Visitors information" and should ask the foll information:
+    1. Email address using textbox,
+    2. Users interest web for research or purchase as checkbox,
+    3. Occupation as dropdown box and preselected value should be given as (select one),
+    4. Check "want us to send you junk emails?" and options are - "absolutely" and "no way man" using radio button,
+    5. A horizonatal lines divides the heading and body content. 
+    6. Once all inputs are given, user should be able to "submit" or "reset",
+    7. Form should be tabulated using table tag.
+ -->
+
+<html>
+    <head>
+        <meta charset="utf=8">
+        <title>Problem 2</title> 
+    </head>
+    <body>
+        <h1 style="text-align: center;">Visitors information</h1>
+        <hr>
+        <table border="0" align="center">
+            <form name="form1" action="Servlet1" method="POST">
+                <tr>
+                    <td> 
+                        <label for="email">Enter email address:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="box1">User's interest web for research or purchase:</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="box1" checked>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="occupation">Occupation:</label>
+                    </td>
+                    <td>
+                        <select name="occupation" id="occupation" size="1">
+                            <option value="Businessman">Businessman</option>
+                            <option value="Carpenter">Carpenter</option>
+                            <option value="Mason">Mason</option>
+                            <option value="Other" selected>Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Want us to send you junk emails?:
+                    </td>
+                    <td>
+                        <input type="radio" name="opt1">
+                        <label for="opt1" >absolutely</label>
+                        
+                        <input type="radio" name="opt1">
+                        <label for="opt1">no way man</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="submit" value="Submit">
+                        <input type="reset">
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </body>
+</html>
