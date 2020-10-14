@@ -1,0 +1,284 @@
+-------------------Lambda Expressions----------------------
+
+[Lambda Expressions
+1
+ Create an ArrayList al and add 25 random numbers.
+Write a code to print all the prime numbers that are present in
+it, using lambda expression.
+
+2
+ Create an ArrayList al and add 10 different words.
+Write a code to print all the Strings in reverse order, using
+lambda expression.
+
+3
+ Create an ArrayList al and add 10 different words.
+Write a code to print all the Strings whose length is odd, using
+lambda expression.
+
+4
+ Create an interface WordCount with a single abstract method int
+count(String str), to count and return the no of words in the
+given String.
+Implement count method using Lambda expression in another class
+MyClassWithLambda.
+Invoke it to display the result on the console.
+
+
+-------------------forEach----------------------
+
+[forEach]
+1
+ Write a program to create an ArrayList and add the weekdays.
+Iterate and print all the elements using forEach method. forEach
+2
+ Create an ArrayList and add 5 Employee(id,name,address,salary)
+objects.
+Retrieve the objects from the ArrayList using forEach and print
+the Employee details.
+
+
+
+
+-------------------Interfaces----------------------
+
+[Interfaces]
+1
+ Create an interface Vehicle with a default method message() that
+returns nothing and prints "Inside Vehicle".
+Create an interface FourWheeler with a default method message()
+that returns nothing and prints "Inside FourWheeler".
+Create a class Car implementing these two interfaces.
+In this class, Override the message() method and call the
+message() method of the Vehicle interface using super keyword.
+Instantiate the class, call the message method and observe the
+output.
+
+[Interfaces and Lambda Expression]
+2
+ Create an interface Test with an abstract method "int
+myFunction".
+This function takes three integer parameters.
+Write a program to create two Test reference variables t1 and t2.
+t1 should add three integer parameters and t2 should multiply
+three integer parameters, using lambda expression.
+Call myFunction using t1 and t2 reference variables, by passing
+three integer values and print the result.
+
+
+-------------------Method Reference----------------------
+
+[Method Reference]
+1
+ Define your own class with an instance method "int factorial(int
+n)" which should return the factorial of the given input "n".
+Define your own functional interface to refer this instance method
+and invoke it to get the factorial result.
+
+2
+ Define your own class with a static method "int digitCount(int
+n)" which should return the number of digits in a given input "n".
+Define your own functional interface to refer this static method
+and invoke it to get the number of digits.
+
+3
+ Define your own class and a parameterized constructor with one
+integer argument. It should check the argument and display "Prime"
+or "Not Prime".
+Define your own functional interface to refer this constructor and
+invoke it to check whether the given number is Prime or Not.
+
+
+-------------------Optional class----------------------
+
+[isPresent]
+1
+ Use Optional class and avoid NullPointerException from the below
+code:
+String names[ ] = new String[5];
+System.out.print(names[0].length( ));
+
+[orElse]
+2
+ Given a String address, print the address if it is not null or
+else print the default address as "India".
+
+[orElseThrow]
+3
+ Given an Employee object which may be initialized to null, use
+Optional class to check if it is null and to throw an user defined
+exception InvalidEmployeeException.
+
+
+
+-------------------Stream API----------------------
+
+[filter, collect]
+1
+ Write a program
+1. To filter the negative even numbers from an ArrayList,
+2. Store them into a new ArrayList,
+3. Print the ArrayList elements.
+
+2
+ Create an Employee class with
+1. Instance variables: empNo, name, age, location.
+2. A parameterized constructor to initialize them.
+Write a program
+1. To add five Employee objects into an ArrayList,
+2. Filter the Employee objects whose location is Pune,
+3. Store them in a separate ArrayList and print their details.
+
+3
+ Create a Student class with
+1. Instance variables: rollNo, name, mark.
+2. A parameterized constructor to initialize them.
+Write a program
+1. To add five Student objects into and ArrayList,
+2. Filter the Student objects who have cleared the test with
+minimum 50 marks,
+3. Get the count of how many have cleared and print it.
+
+
+-------------------Functional Interface----------------------
+[Function]
+1
+ Given an ArrayList with 5 Employee(id,name,location,salary)
+objects,
+write a program to extract the location details of each Employee
+and store it in an ArrayList, with the help of Function.
+
+2
+ Given an ArrayList containing 10 numbers, write a program to
+calculate the sum of all the elements, with the help of Function. 
+
+[Predicate]
+3
+ Given an ArrayList containing 10 words, write a program to filter
+the words which are palindrome, with the help of Predicate. 
+
+4
+ Create an Employee class with three private variables id, name
+and salary.
+Create getters & setters and a parameterized constructor.
+Create an ArrayList and store 5 to 10 Employee objects in it.
+Write a program using Predicate, to filter and display the name of
+the employees whose salary is less than 10000.
+
+5
+ Given an ArrayList containing 10 numbers, write a program to
+filter the perfect square numbers.
+Example for perfect square numbers: 0, 1, 4, 9, 16, 25, 36, 49, 64
+etc..
+
+[Consumer]
+6
+ Given an ArrayList containing 10 words, write a program to
+reverse each word and
+update the same ArrayList , with the help of Consumer.
+
+7
+ Given an ArrayList containing 10 numbers, write a program using
+Consumer methods to display each number and whether is it odd or
+even.
+Example: For number 2, it should print "2 even" For number 5, it
+should print "5 odd"
+
+8
+ Write a program using Supplier, which generates and returns an
+ArrayList containing first 10 prime numbers.
+
+
+-------------------Parallel Array Sorting----------------------
+
+[Parallel Array Sorting]
+1
+ Write a program as per the below instructions:
+a) Initialize an integer Array with 10 elements.
+b) Sort this array using parallelSort() method.
+c) And display the sum of min and max value of this array as
+result.
+
+2
+ Write a program as per the below instructions:
+a) Take any String as a input from the user. And convert this
+string into character array (you may use toCharArrayMethod()).
+b) Sort this character array using parallelSort() method. After
+sorting convert this character array into a String and display
+this String as a result.
+Example:
+Input : valan
+Output : aalnv
+
+3
+ Write a program as per the below instructions:
+Initialize an integer Array with 10 elements.
+Sort only first 5 elements in this array using parallelSort()
+method and display the sorted array.
+
+
+-------------------Date Time API----------------------
+
+[LocalDate]
+1
+ Write a program to display today's date and the date after ten
+days. 
+
+2
+ Write a program to find the date of next month second Sunday. 
+
+3
+ Write a program to calculate your experience (no of years, no of
+months & no of days) in Wipro. 
+
+4
+ Write a program to check whether the current year is a leap year. 
+
+[LocalTime]
+5
+ Write a program to display the current time and the time after 25
+minutes. 
+
+6
+ Write a program to display the current time and the time before 5
+hours and 30 minutes.
+
+
+-------------------StringJoiner class----------------------
+
+[forEach, add]
+1
+ Given an ArrayList containing n names, use StringJoiner to
+construct a new sequence of names separated by , (comma) and
+enclosed in { } brackets.
+
+[add, merge]
+2
+ Given two StringJoiners s1 and s2 which contains n city names
+separated by - (hyphen), display the output for the given cases:
+i) s1 merged to s2.
+ii) s2 merged to s1.
+
+-------------------Introduction to Nashorn----------------------
+
+[jjs]
+1
+ Write a JavaScript code which displays the current system date
+and time.
+Save the code as Sample.js, invoke it using jjs tool and display
+the result.
+
+[Java Scripting API]
+2
+ Write a JavaScript function which accepts a number and returns
+true if it is a prime number else returns false.
+Save the code as Demo.js, invoke the function from a Java program
+and display the result.
+
+[Java.type() method]
+3
+ Write a JavaScript code which creates a Java HashMap object,
+store 5 country and capital names as key and value.
+Iterate them with for loop and display the elements one by one.
+
+
