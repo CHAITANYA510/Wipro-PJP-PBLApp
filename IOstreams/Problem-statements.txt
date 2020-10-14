@@ -1,0 +1,66 @@
+-------------------I/O Operations----------------------
+
+[I/O Streams]
+1.
+ Write a program to count the number of times a character appears
+in a File.
+[Note : The character check is case insensitive... i.e, 'a' and
+'A' are considered to be the same]
+Sample Input and Output:
+Enter the file name
+Input.txt
+Enter the character to be counted
+r
+File 'Input.txt' has 99 instances of letter 'r'.
+
+2
+ Write a program to copy contents from one file to another and
+check the output.
+Sample Input and Output:
+Enter the input file name
+Input.txt
+Enter the output file name
+Output.txt
+File is copied.
+
+3
+Write a program to count the occurrences of each word in an input
+file and write the word along with its corresponding count in an
+output file.
+[Note: The words should be sorted alphabetically in the output
+file]
+(Hint : Consider using Map Collection)
+For Example, let's assume the following are the contents of
+inputFile.txt
+Manoj works at Wipro
+Katari works at Wipro
+Sureka works at Wipro
+Harish works at Wipro
+Anitha works at Wipro
+Janani works at Wipro
+D:\>Java FileWordCount inputFile.txt outputFile.txt
+After Execution of the program the contents of outputFile.txt
+should be as below
+Anitha : 1
+Harish : 1
+Janani : 1
+Katari : 1
+Manoj : 1
+Sureka : 1
+Wipro : 6
+at : 6
+works : 6
+
+------------------Object Serialization----------------------
+
+[Object Serialization, Deserializable]
+1
+Create a class called Employee with properties
+name(String),dateOfBirth(java.util.Date),department(String),designation(String)
+and Salary(double).
+Create respective getter and setter methods and constructors (no-argument
+constructor and parameterized constructor) for the same.
+Create an object of the Employee class and save this object in a file called
+"data" using serialization.
+Later using deserialization read this object and print the properties of this
+object.

@@ -1,0 +1,108 @@
+-------------------List----------------------
+
+[List iterator]
+1
+ Create an ArrayList that can store only Strings.
+Create a printAll method that will print all the elements of the
+ArrayList using an Iterator and obeserve the order of the values
+being printed.
+
+[List, ArrayList]
+2
+ Create an ArrayList that can store only numbers like
+int,float,double,etc, but not any other data type.
+
+[List, vector, enum]
+3
+ Write a program to store integer numbers into Vector collection
+and use Enumeration to print the values. Also try using Iterator
+and ListIterator to print the values from the Vector object.
+
+
+-------------------Set----------------------
+
+[Set, HashSet, Iterator]
+1
+ Create a class HashSetDemo with the folloing variables and
+methods:
+HashSet set = new HashSet<>(); //instance variable
+public static void main(String[] args)
+boolean addCountry(String countryName)
+String findCountry(String countryName)
+void printAllCountries()
+From main() method, try to add the county name to HashSet object
+by calling addCountry(). Provide duplicate country name while
+adding and observe the return values from the addCountry().
+From main() method, try passing the country name to the
+findCountry() method and check the country name exists or not, if
+exists return the country name else return "Country Not Found".
+Now, call printAllCountries() to print all the country names which
+are added earlier. (Try using Enumeration, Iterator, ListIterator
+and observe and also observe the order of elements being printed)
+
+[Set, TreeSet]
+2
+ Create a Collection called TreeSet which is capable of storing
+String objects. Then try these following operations :
+a) Reverse the elements of the Collection.
+b) Iterate the elements of the TreeSet using Iterator and observe
+the order.
+c) Check if a particular element exists or not.
+
+3
+ Create the below classes:
+class Employee{
+int empID;
+String name;
+float salary;
+}
+class TreeSetDemo{
+ public static void main(String[] args)
+ boolean addEmployee(Employee emp)
+ void displayAllEmployees() // Display employee details based on
+salary in ascending order
+}
+
+
+
+-------------------Map----------------------
+
+[Map, HashSet, Iterator]
+1
+ 1. Develop a java class with an instance variable mapObj of type
+HashMap. Create a method
+String saveCountryCapital(String countryName, String capital) :
+The method should add the passed country and capital as key/value
+in the mapObj and return the appropriate value, try adding
+duplicate country name and capital.
+Key- Country Value - Capital
+India Delhi
+Japan Tokyo
+2. Develop a method String getCapital(String countryName) which
+returns the capital for the country passed. If country is not
+available, then return "No Country Found"
+3. Develop a method String getCountry(String capitalName) which
+returns the country for the capital name. If capital is not
+available, then return "No Capital Found"
+4. Develop a method which iterates through the mapObj and creates
+another HashMap mapObj2 with Capital as the key and value as
+Country and returns the mapObj2 object.
+Key – Capital Value – Country
+Delhi India
+Tokyo Japan
+5. Develop a method which returns ArrayList object, the ArrayList
+object should contain all country names present in mapObj.
+6. Develop a method which returns ArrayList object, the ArrayList
+object should contain all capital names present in mapObj.
+NOTE: You can test the methods using a main method.
+
+
+[Map, HashSet]
+2
+ Create a contactList object of type TreeMap to store name (as
+Key) and phone number (as Value). The program should have the
+following abilities:
+a) Provide contact name and get the phone number.
+b) Provide phone number and get the contact name.
+c) Print all the contact names and their respective phone numbers
+and observe the output.
