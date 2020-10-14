@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.wipro.bean.Product" table="product">
+    	<id name="productID">
+    		<generator class="sequence">	
+    			<param name="sequence">SEQ_PRODUCT_ID</param>
+    		</generator>
+    	</id>
+    	<property name="productName"></property>
+    	<property name="price"></property>
+    </class>
+</hibernate-mapping>

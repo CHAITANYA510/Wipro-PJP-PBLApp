@@ -1,0 +1,166 @@
+-------------------Introduction to Hibernate----------------------
+
+[Hibernate basic]
+1
+ Connect to Oracle using Scott login
+view the table structure of EMP table (desc Emp)
+Create proper bean class for EMP table and insert a record into
+this table
+Use Hibernate mapping file (.hbm.xml)
+
+2
+ Create a table with the following structure.
+Column Name Datatypes
+FlowerID Varchar2
+FlowerName Varchar2
+Color Varchar2
+Price Number
+Create proper bean class and insert a record into this table.
+
+3
+ Using Hibernate create an employee table in the backend and
+insert 5 employee objects into the database.
+The following are the details of the employee table.
+Name varchar2
+Id Number
+Designation varchar2
+Salary Number
+The Employee Id should be auto incremented
+[ Hint : generator class="increment"]
+
+4
+ Using Hibernate create a Product table in the backend and insert
+5 Product objects into the database.
+The following are the details of theProduct table.
+ProductName varchar2
+ProductId Number
+Price Number
+The value of the ProductId should be taken from a sequnce which is
+created at the back end
+[ Hint : generator class=sequence ]
+
+
+-------------------Objects----------------------
+
+[Hibernate basic - get/load method]
+1
+ Assume that the following data exists in the table that you have
+created earlier
+FlowerID FlowerName Color Price
+1 Rose Red 10
+2 Carnation White 15
+Retrieve and display the details of the id 2 - flower-
+‘Carnation’.
+
+2
+ Write a Hibernate Program to Delete a Flower with its Id from the
+table that you have created earlier. If there is no Flower with
+that id exists, then an appropriate error message needs to be
+stored to the user.
+
+3
+ Write a Hibernate Program that will ask the user to enter an id
+and price. Using that the corresponding Flower's price need to be
+updated.
+After updating, show that the value is updated, by displaying that
+record.
+
+
+------------------- Hibernate3 with Annotations----------------------
+
+[Hibernate annotations]
+1
+ Write a Hibernate Program which makes using of all the
+annotations @Entity, @Table, @Id, @Column to create the mapping
+for the following table Car_Details
+RegNo char(5)
+Model varchar2(20)
+Color varchar2(10)
+Manufacturer varchar2(20)
+
+2
+ Insert the following records into the Car-Detail table
+RegNo| Model| Color| Manufacturer
+KL-07| AB 123 Polo| White| Volkswagen
+KL-07| AB 234 Vento| Black| Volkswagen
+KL-07| AC 345 Corolla| Silver| Toyota
+
+------------------- HQL----------------------
+
+[HQL]
+1
+ Display the details of all cars from the following table using
+HQL.
+RegNo Model Color Manufacturer
+KL-07 AB 123 Polo White Volkswagen
+KL-07 AB234 Vento Black Volkswagen
+KL-07 AC 345 Corolla Silver Toyota
+
+2
+ Write a Hibernate program to display only the RegNo and the
+Manufacturer's name in the above program
+
+3
+ Write a Hibernate program which will ask the user to enter a
+registration number and display the details of that Vehicle.
+Assign the value to the query using a label.
+
+4
+ Write a Hibernate program to display only the Manufacturer's
+names which are starting with ‘V’ from above table
+
+[Use Criteria Query]
+5
+ Write a Hibernate program to display cars details based on color
+
+6
+ Write a Hibernate program to display total count of cars based on
+Reg No
+
+-------------------Mappings----------------------
+
+[Hibernate mappings]
+
+1
+ Create a program to persist the following class object using
+Association Mapping where car would be on OneToOne mapping:
+public class CarOwner {
+private int OnnerId;
+private String OnerName;
+private CarDetail car;
+}
+
+2
+ Make another class called MultiCarOwner program to persist the
+following class object using Collection Mapping of one owner to
+many cars mapping:
+public class CarOwner {
+private int OnnerId;
+private String OnerName;
+private List cars;
+}
+
+3
+ Create a program to persist the following class 10 objects using
+Collection Mapping:
+Public class Continent{
+Private String cname;
+Private Map countries;
+}
+Note : Countries property should be of type Map object with
+Country String class object as key and Capital String class object
+as value
+
+4
+ Write an Employee class and Passport class such that, one
+employee object should hold only one passport object (one-to-one).
+Implement a client code such that when we save or delete Employee
+object, automatically passport object should be stored or deleted
+in a related table.
+Note: you can add any appropriate class members
+
+5
+ Convert the Employee class with address class such that, one
+employee object should have only one address object (one-to-one).
+As a Component Mapping Such that there is only one employee table
+and the address details are added as columns to the Employee table
