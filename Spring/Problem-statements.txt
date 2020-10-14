@@ -1,0 +1,122 @@
+-------------------SpringBasics----------------------
+
+1
+ A Model class “Movie” has the below properties
+Sensitivity: Internal & Restricted
+• movieId – String – E.g.: M001
+• movieName – String – E.g.: The Firm
+• movieActor – String – E.g.: Tom Cruise
+• Create a spring xml configuration file to create a bean entry
+for the Movie object
+with some sample property values
+The client program should be able to display all the details of
+the Movie object on the console.
+
+2
+ Create a class called DefaultMessage with a single member
+variable called message which is initialized with a default value
+"Spring". Instantiate this class and test
+
+
+-------------------Spring Inversion Of Control----------------------
+
+1
+ Create an abstract parent class called Shape with an abstract
+draw method and create subclasses of this class like Rectangle,
+Triangle and Parallelogram. Define a simple java class called
+DrawShape, which will instantiate an object depending on the
+dependency injection and calls appropriate draw method.
+
+2
+ Create a class called ConstructorMessage with a single member
+variable called message which is initialized with null.The
+class will have a parameterized constructor which initializes
+the member variable called message. Instantiate this class
+using Inversion control and test. [Perform Constructor
+Injection]
+
+3
+ Create a class called SetterMessage with a single member
+variable called message which is initialized with null.
+Instantiate this class using Inversion control and test[
+Perform Setter Injection ]
+
+4
+ There are two Model classes as below:
+Student
+studentId -> String -> S001
+studentName -> String -> Steve
+studentTest -> Object of type Test
+Test
+testId -> String -> T001
+testTitle -> String -> “Core Java Test”
+testMarks -> int -> 80
+Create a spring program to create 2 student instances. First
+student has taken up the test with Core Java Test with 80 as
+score and the Second student has taken Oracle test with 83 as
+score
+In the client program display all the details of both the
+students along with their test details as
+well.
+
+5
+ There are two Model classes as below:
+Player
+ playerId -> String -> P001
+ playerName -> String -> Sachin
+ country -> Object -> of type ‘Country’
+Country
+ countryId -> String -> C001
+ countryName -> String -> ‘India’
+Every player belongs to a particular country. Create a spring
+program to create 5 players and 2
+countries. 2 players belong to one country and the other 3
+players belong to another country.
+The client program should display the details of all players
+and their corresponding country
+details. If given a country name, it should also display all
+the player names who belong to that
+country.
+
+
+---------------------- SpringMVC, Expression Language (EL), JSTL---------------------
+1
+ Using Spring MVC write a HelloWorld Program 
+
+2
+ Create a Spring web application where index page has a link
+requesting to display top view series / movies
+On click the controller has to return a Model Object of ArrayList
+containing list of names of the series or movies (Minimum 10)
+which needs to be displayed in out result.jsp using Expression
+Language (EL)
+
+3
+ Create a form which takes three inputs from the User -> Science
+marks , Maths marks and
+English marks
+After entering the data, when the user clicks on the submit
+button, it has to calculate the sum of
+these numbers and show the total marks back to the user.
+Use Spring MVC for this solution and use XML configuration
+
+4
+ Create a Spring web application where index page has a link
+requesting to display top view series / movies
+On click the controller has to return a Model Object of ArrayList
+containing list of names of the series or movies (Minimum 10)
+which needs to be displayed in out result.jsp using JSTL (HINT :
+forEach tag)
+
+
+-------------- SpringMVC with Hibernate---------------
+1
+ Create a Spring based MVC application which collects Student
+details from the user and inserts them into the database
+
+2
+ Create a Spring based MVC application which displays all the
+Student details which were inserted earlier
+
+3
+ Do the Cash Back Offer Exercise from the Mini Projects section
