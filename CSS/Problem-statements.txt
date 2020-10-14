@@ -1,0 +1,256 @@
+------------------Styles and Style Sheets----------------------
+
+1
+ Create a webpage that displays the div element with the following
+properties.
+• Alignment: Center
+• Font Size : 27pixels
+• Font Name: Arial
+Note: Use CSS Id selector
+
+2
+ Create a webpage that displays the div element with the following
+properties
+• Alignment: Center
+• Font Size : 25pixels
+• Font Name: Verdana
+Note: Use CSS class selector
+
+3
+ You should write an external CSS file with the following
+attributes for the body tag and you need to link this CSS file to
+your HTML file.
+• Font size: 24pixels
+• Body background: #00BFFF
+• The text should be displayed in “Verdana” font.
+
+4
+ Create a webpage that displays the div element with the following
+attributes.
+• Font name: Verdana
+• Font size: 20 pixels
+• Color: red
+• Align: center
+Note: Use Inline style sheet
+
+------------------- Formatting with CSS----------------------
+
+1
+ Create a webpage that displays an image as the background of the
+page and set the background image position to right top.
+
+2
+ Create a webpage that has a background color and a background
+image.
+
+3
+ Create a webpage that displays different background color for
+different elements.
+
+4
+ Create a webpage that displays an image as the background and
+also repeats the background image only horizontally.
+
+5
+ Create a webpage that displays an image as the background and
+also repeats the background image only vertically.
+
+6
+ Create a webpage that displays the text in different colors for
+each elements.
+
+7
+ Create a webpage that displays the div element with the following
+text properties.
+• Text color: Magenta
+• Text alignment: right
+• Text decoration: underline
+• Text transform: uppercase
+• Text indent: 60 pixels
+
+8
+ Create a webpage that displays the div element with the following
+font properties.
+• Font family: Verdana
+• Font style: italic
+• Font size: 20pixels
+• Text align: left
+• Font weight: bold
+• Text color: Red
+
+9
+ Create a web page that displays an image of size approximately
+200 x 200 px, which gets itself repeated fully on the page. : (Use
+CSS)
+
+10
+ Using CSS, create a web page that displays text “Welcome to CSS
+World” with an image as its border,
+a. Image repeats itself to fit the contents
+b. Image should stretch to fit the contents
+
+
+------------------Links and Lists----------------------
+
+1
+ Create a webpage that displays the hyperlink with the following
+color attributes.
+• Set the color as %FF0000 for unvisited link
+• Set the color as %FFFF00 for visited link
+• Set the color as %FF00FF for mouse over link
+• Set the color as %0000FF for selected link
+
+2
+ Create a webpage that displays the hyperlink with the following
+properties.
+• Set the color as red for unvisited link
+• Set the text decoration as underline for unvisited link
+
+3
+ Create a webpage that displays the hyperlink with the following
+background color properties.
+• Set the background color as %FF0000 for unvisited link
+• Set the background color as %FFFF00 for visited link
+• Set the background color as %FF00FF for mouse over link
+• Set the background color as %0000FF for selected link
+
+4
+ Create a webpage that displays a list as an ordered list with the
+following properties.
+• List-style-type: lower-greek;
+• Text align: left
+• Color: red
+• Text transform: uppercase
+• Text decoration: underline
+• Font name: Verdana
+• Font size: 20pixels
+• Font weight: bold
+
+5
+ Create a webpage that displays a list as an unordered list with
+the following properties.
+• List-style-type: square;
+• Text align: left
+• Color: red
+• Text transform: uppercase
+• Text decoration: underline
+• Font name: Arial
+• Font size: 25pixels
+• Font weight: bold
+
+6
+ Create a webpage that displays an image as the list item marker.
+
+
+---------------------CSS Box Model---------------------
+1
+ Create a webpage that displays the paragraph with a total width
+of 250pixels.
+
+2
+ Create a webpage that displays the paragraph with the following
+properties.
+• Set the width of the border as 10 Pixels.
+• Set the style of the border as dotted.
+• Set the color of the border as #0000ff
+
+3
+ Create a webpage that displays the paragraph with the following
+margin properties.
+• Set the top margin as 2cm
+• Set the bottom margin as 25%
+
+4
+ Create a webpage that displays three paragraphs with the
+following margin properties.
+• Set the top margin as 3cm for first paragraph
+• Set the bottom margin as 5cm for first paragraph
+• Set the left margin as 2cm for second paragraph
+• Set the top margin as 25% for third paragraph
+
+5
+ Create a webpage that displays four paragraphs with the following
+padding properties.
+• Set the left padding as 3cm for first paragraph
+• Set the right padding as 50% for second paragraph
+• Set the bottom padding as 25% for third paragraph
+• Set the top padding as 25% for fourth paragraph
+
+----------------------------CSS3--------------------------------
+
+1
+ Create a webpage that displays the div element with the following
+CSS properties.
+• Set the border as 2 pixels solid
+• Set the padding as 20 pixels
+• Set the background as #dddddd
+• Set the border top left radius as 2em
+
+2
+ Create a webpage that displays the div element with the following
+CSS property.
+• Set the text shadow as h-shadow
+
+3
+ Create a webpage that displays a white text with black shadow.
+
+4
+ Create a webpage that displays an image as the border around an
+element with the following properties.
+• Border: 15 pixels solid
+• Padding: 20 pixels
+• Border image: url (imagename.png) 30 30 stretch
+
+5
+ Create a webpage that displays an image as the background around
+an element with the following properties.
+• Border: 1pixels solid black
+• Height: 150pixels
+• Width: 180pixels
+• Background : url (imagename.gif)
+• Background-repeat: no-repeat
+• Background-size: cover
+
+6
+ Create a webpage that displays the text which is provided in div
+element and rotates the div element counter-clockwise with 20
+degrees.
+
+7
+ Create a webpage that displays the div element with the following
+properties.
+• Set the
+ element to be two times of its original width, and three times of
+its original height:
+
+8
+ Create a webpage that displays the div element with the following
+properties.
+• Skews the
+ element 20 degrees along the X-axis, and 10 degrees along the Yaxis
+• Set the background color as yellow
+• Set the border as 1pixels solid black
+• Set the width as 200pixels
+• Set the height as 100 pixels
+
+>1200 in light red. (Hint: use table table-striped )
+4
+ Create a webpage to display Tulips.jpg from sample pictures of
+your machine. Ensure the image has soft round edges and as you
+resize the screen, the image should also resize itself and fit its
+display to full page size.
+5
+ Create a webpage called OnlineRead with give look and feel
+Page should display Book Types as buttons with given background
+effect:
+For All – white
+Kids – bark blue
+Teens – Green
+Scientific – Light Blue
+Crime – OrangeHorror – red
+Feedback – shown
+In next line display the comfort font size with buttons of varying
+sizes ranging from big to small (in 4 steps)
+
+
+
