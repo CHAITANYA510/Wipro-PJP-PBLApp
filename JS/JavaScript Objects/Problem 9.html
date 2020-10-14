@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Problem 9</title>
+        <script>
+            function realtime() {
+                var today = new Date();
+
+                var h = today.getHours();
+                var m = today.getMinutes();
+                var s = today.getSeconds();
+
+                m = padding(m);
+                s = padding(s);
+
+                document.getElementById('box1').innerHTML = h + ":" + m + ":" + s;
+
+                var t = setTimeout(realtime, 1000);
+            }
+
+            function padding(i) {
+                if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+                return i;
+            }
+        </script>
+    </head>
+    <body onload="realtime()">
+        <h3 style="text-align: center;">Problem 9</h3>
+        <p id="box1" style="text-align: center; color: green;"></p>
+    </body>
+</html>
+

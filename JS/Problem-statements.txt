@@ -1,0 +1,111 @@
+
+------------------------- Introduction to Javascript ,its Basics and Functions-----------------
+1
+ Write a JavaScript program which will print ‘HelloWorld’ in the
+body of the HTML document
+
+2
+ Write a JavaScript function that reverses a number.
+Example x = 32243;
+Expected Output : 34223
+
+3
+ Write a JavaScript function that checks whether a passed string
+is palindrome or not?
+
+4
+ Write a JavaScript function that accepts a string as a parameter
+and converts the first letter of each word of the string in upper
+case.
+
+----------------JavaScript Objects-------------------
+1
+ Write a JavaScript program that displays the position of the
+first occurrence of "World" in the variable txt.
+2
+ Write a JavaScript program that converts the text to upper case.
+3
+ Write a JavaScript function to remove specified number of
+characters from a string.
+4
+ Create an HTML page with two textboxes and a Calculate button:
+When user enters the numbers and clicks the Calculate button, it
+has to alert the sum.
+5
+ Write a JavaScript program which will have one textbox to get
+input as string and after giving input when you leave the input
+textbox, a function is triggered which transforms the input text
+to uppercase.
+6
+ Create a HTML page with 4 hyperlinks named white, red, blue and
+pink.
+The background colour of the HTML page will change based on the
+link which is clicked.
+Write a javascript function to implement it.
+7
+ Write a JavaScript program which will
+a. give an alert message of today’s date.
+b. prompt the user to give their name and gives an alert message
+‘Hello’ and username.
+c. prompt the user to give 2 numbers and alerts the sum of those 2
+numbers.
+8
+ Write a JavaScript program that prompts the user to enter a
+number and display whether the number given is odd or even.
+9
+ Create program to display current time in a textbox (HH:MM:SS)
+such that the value in the time textbox is dynamic (Time should
+get updated every second) and not static.
+[Hint: Use setTimeOut function]
+
+
+----------------------JavaScript Validations---------------------
+1
+ Write validation functions and modify the onSubmit event Handler
+in the form code to validate the following form fields:
+1. Member number
+• Must be entered
+• Must be a number
+2. Password
+• Must be entered
+• Must be longer than 4 characters
+If an error occurs, use an alert box to display an error message
+for the first field in error and place the cursor in the first
+field in error.
+2
+ Write validation functions and modify the onSubmit event Handler
+in the form code to validate the following form fields:
+1. Phone Number
+• Must be entered
+• Must be in below format
+ XXX-XXX-XXXX
+ XXX.XXX.XXXX
+ XXX XXX XXXX 
+
+
+--------------------JavaScript Regular Expression--------------
+1
+ Write validation functions and modify the onSubmit event Handler
+in the form code to validate the following form fields:
+1. Member number
+• Must be entered
+• Must be a number
+2. Password
+• Must be entered
+• Must be longer than 4 characters
+If an error occurs, use an alert box to display an error message
+for the first field in error and place the cursor in the first
+field in error.
+2
+ Write validation functions and modify the onSubmit event Handler
+in the form code to validate the following form fields:
+1. Phone Number
+• Must be entered
+• Must be below format
+ XXX-XXX-XXXX
+ XXX.XXX.XXXX
+ XXX XXX XXXX
+3
+ Write a validation function to check a password between 6 to 20
+characters which contain at least one numeric digit, one uppercase
+and one lowercase letter

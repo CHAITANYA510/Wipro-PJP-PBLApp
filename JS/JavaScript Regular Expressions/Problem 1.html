@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Problem 1</title>
+        <style>
+            #p1{
+                text-align: center;
+                font-size: 30px;
+                font-weight: 700;
+            }
+            table{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            th, td{
+                text-align: left;
+                padding: 10px;
+            }
+            #p2{
+                text-align: center;
+                font-size: 20px;
+            }
+        </style>
+        <script>
+            function validateForm(){
+                var num = document.getElementById("memberNumber").value;
+                var pwd = document.getElementById("pwd").value;
+                //alert("number is: "+num+" and password is: "+pwd);
+                if(num.length==0 || pwd.length==0){
+                    alert("Input cannot be blank");
+                }
+                if(isNaN(num)){
+                    alert("Invalid Member Number");
+                }
+                if(pwd.length<=4){
+                    alert("Password should be longer than 4 characters");
+                }
+            }
+
+        </script>
+    </head>
+    <body>
+        <p id="p1">Problem 1</p>
+        <form name="form1"  onsubmit="validateForm()">
+            <div>
+                <table>
+                    <tr>
+                        <td> 
+                            <label for="memberNumber">Enter Member Number:</label>
+                        </td>
+                        <td>
+                            <input type="text" name="memberNumber" id="memberNumber">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <label for="pwd">Enter Password:</label>
+                        </td>
+                        <td>
+                            <input type="password" name="pwd" id="pwd">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <input type="submit" value="Login">
+                            <input type="reset">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </body>
+</html>

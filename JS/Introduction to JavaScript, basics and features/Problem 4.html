@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Problem 4</title>
+</head>    
+<body>
+    <script>
+        function capitalize(s){
+	        arr =  s.split(' ');
+            var out="";
+            //document.write(arr);
+            
+            for(var i=0;i<arr.length;i++){
+                //out = out.concat(words[i]);
+                //document.write(arr[i]+"\n"); 
+                out = out.concat(arr[i].charAt(0).toUpperCase() + arr[i].slice(1) + ' ');
+            }
+            //document.write(out);
+            return out;
+        }
+        document.write(capitalize("hello")+"<br>"); 
+        document.write(capitalize("what's up")+"<br>"); 
+        document.write(capitalize("all well, how about you ?")+"<br>"); 
+        document.write(capitalize("I Am Good, thank you.")+"<br>");
+    </script>
+</body>
+</html>

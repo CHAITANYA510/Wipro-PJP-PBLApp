@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Problem 3</title>
+</head>    
+<body>
+    <script>
+        function pallindrome(num){
+            n = new String(num);
+            var temp = n;
+            //document.write(n.split("").reverse().join(""));
+	        if(n.split("").reverse().join("") == temp){ 
+                //document.write("Is");
+                return true;
+            }
+            else{
+               //document.write("Is not");
+                return false;
+            }
+        }
+        document.write(pallindrome(3223)+"<br>"); 
+        document.write(pallindrome(1000)+"<br>"); 
+        document.write(pallindrome(5665)+"<br>"); 
+    </script>
+</body>
+</html>

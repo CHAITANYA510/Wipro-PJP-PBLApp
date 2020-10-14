@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Change Password</title>
+        <meta charset="ISO-8859-1">
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <p id="p1">Change Password</p>
+        <form name="Change Password">
+            <div>
+                <table>
+                    <tr>
+                        <td> 
+                            <label for="newpwd">Enter New Password:</label>
+                        </td>
+                        <td>
+                            <input type="password" name="newpwd" id="newpwd" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <label for="cnfpwd">Confirm New Password:</label>
+                        </td>
+                        <td>
+                            <input type="password" name="cnfpwd" id="cnfpwd" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <input type="submit" value="Change Password" onclick="validatePassword();">
+                            <input type="reset">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <p id="demo"></p>
+        </form>
+        <script src="index.js"></script>
+    </body>
+</html>

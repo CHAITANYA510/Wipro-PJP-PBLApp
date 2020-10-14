@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Problem 2</title>
+        <style>
+            #p1{
+                text-align: center;
+                font-size: 30px;
+                font-weight: 700;
+            }
+            table{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            th, td{
+                text-align: left;
+                padding: 10px;
+            }
+            #p2{
+                text-align: center;
+                font-size: 20px;
+            }
+        </style>
+        <script>
+            function validateForm(){
+                var num = document.getElementById("phoneNumber").value;
+                if(num.length==0){
+                    alert("Number cannot be empty");
+                }
+                var regexp = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+                if(num.match(regexp)){
+                    return true;
+                }
+                else{
+                    alert("Enter number in specified format");
+                    return false;
+                }
+            } 
+        </script>
+    </head>
+    <body>
+        <p id="p1">Problem 2</p>
+        <form name="form1"  onsubmit="validateForm()">
+            <div>
+                <table>
+                    <tr>
+                        <td> 
+                            <label for="phoneNumber">Enter Phone Number:</label>
+                        </td>
+                        <td>
+                            <input type="text" name="phoneNumber" placeholder="xxx-xxx-xxxx" id="phoneNumber">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <input type="submit" value="Submit">
+                            <input type="reset">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </body>
+</html>

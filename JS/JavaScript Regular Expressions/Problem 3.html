@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Problem 3</title>
+        <style>
+            #p1{
+                text-align: center;
+                font-size: 30px;
+                font-weight: 700;
+            }
+            table{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            th, td{
+                text-align: left;
+                padding: 10px;
+            }
+        </style>
+        <script>
+            function validateForm(){
+                var pwd = document.getElementById("pwd").value;
+                if(pwd.length==0){
+                    alert("Password cannot be empty");
+                }
+                var regexp = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
+                if(pwd.match(regexp)){
+                    return true;
+                }
+                else{
+                    alert("Enter paassword in specified format");
+                    return false;
+                }
+            } 
+        </script>
+    </head>
+    <body>
+        <p id="p1">Problem 3</p>
+        <form name="form1"  onsubmit="validateForm()">
+            <div>
+                <table>
+                    <tr>
+                        <td> 
+                            <label for="pwd">Enter Password:</label>
+                        </td>
+                        <td>
+                            <input type="password" name="pwd" id="pwd">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <input type="submit" value="Submit">
+                            <input type="reset">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </body>
+</html>

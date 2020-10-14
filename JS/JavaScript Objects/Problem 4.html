@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Problem 4</title>
+        <script>
+            function sum(){
+                var num1 = parseInt(document.form1.num1.value);
+                var num2 = parseInt(document.form1.num2.value);
+                alert('Sum of '+num1+' and '+num2+' is: '+ (num1+num2));
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Problem 4</h2>
+        <form name="form1">
+        <table>
+            <tr>
+                <td>Number 1:</td>
+                <td><input name="num1" type="number"></td>
+            </tr>
+            <tr>
+                <td>Number 2:</td>
+                <td><input name="num2" type="number"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" onclick="sum()"></td>
+            </tr>
+        </table>
+        </form>
+    </body>
+</html>
+

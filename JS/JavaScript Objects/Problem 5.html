@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Problem 5</title>
+        <script>
+            function uppercase(){
+                var txt = document.form1.txt.value;
+                
+                alert('Text in uppercase is:  '+txt.toUpperCase());
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Problem 5</h2>
+        <form name="form1">
+        <table>
+            <tr>
+                <td>Enter text:</td>
+                <td><input name="txt" type="textbox" onChange="uppercase()"></td>
+            </tr>
+        </table>
+        </form>
+    </body>
+</html>
+
