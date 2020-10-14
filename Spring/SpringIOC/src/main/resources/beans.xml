@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:context="http://www.springframework.org/schema/context"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans
+							http://www.springframework.org/schema/beans/spring-beans.xsd
+							http://www.springframework.org/schema/context
+							http://www.springframework.org/schema/context/spring-context.xsd">
+		
+		<!-- Problem 1 -->
+		<bean id="triangle" class="com.wipro.Problem1.Triangle"></bean>
+		<bean id="rectangle" class="com.wipro.Problem1.Rectangle"></bean>
+		<bean id="parallelogram" class="com.wipro.Problem1.Parallelogram"></bean>	
+		
+		<!-- Problem 2 -->
+		<bean id="constructorMessage" class="com.wipro.Problem2.ConstructorMessage">
+			<constructor-arg index="0" type="java.lang.String" value="Hello from CI(Constructor Injection) IOC."></constructor-arg>
+		</bean>	
+		
+		<!-- Problem 3 -->
+		<bean id="setterMessage" class="com.wipro.Problem3.SetterMessage">
+			<property name="message" value="Hello from SI(Setter Injection) IOC."></property>
+		</bean>
+		
+		<!-- Problem 4 -->
+		<bean id="test1" class="com.wipro.Problem4.Test">
+			<property name="testId" value="T001"></property>
+			<property name="testTitle" value="Core Java Test"></property>
+			<property name="testMarks" value="80"></property>
+		</bean>
+		<bean id="student1" class="com.wipro.Problem4.Student">
+			<property name="studentId" value="S001"></property>
+			<property name="studentName" value="Steve"></property>
+			<property name="test" ref="test1"></property>
+		</bean>
+		
+		<bean id="test2" class="com.wipro.Problem4.Test">
+			<property name="testId" value="T002"></property>
+			<property name="testTitle" value="Oracle Test"></property>
+			<property name="testMarks" value="83"></property>
+		</bean>
+		<bean id="student2" class="com.wipro.Problem4.Student">
+			<property name="studentId" value="S002"></property>
+			<property name="studentName" value="Stefen"></property>
+			<property name="test" ref="test2"></property>
+		</bean>
+		
+		<!-- Problem 5 -->
+		<bean id="country1" class="com.wipro.Problem5.Country">
+			<property name="countryId" value="C001"></property>
+			<property name="countryName" value="India"></property>
+		</bean>
+		<bean id="country2" class="com.wipro.Problem5.Country">
+			<property name="countryId" value="C002"></property>
+			<property name="countryName" value="Australia"></property>
+		</bean>
+		
+		<bean id="player1" class="com.wipro.Problem5.Player">
+			<property name="playerId" value="P001"></property>
+			<property name="playerName" value="Sachin"></property>
+			<property name="playerCountry" ref="country1"></property>
+		</bean>
+		<bean id="player2" class="com.wipro.Problem5.Player">
+			<property name="playerId" value="P002"></property>
+			<property name="playerName" value="Sehwag"></property>
+			<property name="playerCountry" ref="country1"></property>
+		</bean>
+		<bean id="player3" class="com.wipro.Problem5.Player">
+			<property name="playerId" value="P003"></property>
+			<property name="playerName" value="Dhoni"></property>
+			<property name="playerCountry" ref="country1"></property>
+		</bean>
+		<bean id="player4" class="com.wipro.Problem5.Player">
+			<property name="playerId" value="P004"></property>
+			<property name="playerName" value="Clarke"></property>
+			<property name="playerCountry" ref="country2"></property>
+		</bean>
+		<bean id="player5" class="com.wipro.Problem5.Player">
+			<property name="playerId" value="P005"></property>
+			<property name="playerName" value="Johnson"></property>
+			<property name="playerCountry" ref="country2"></property>
+		</bean>
+</beans>
