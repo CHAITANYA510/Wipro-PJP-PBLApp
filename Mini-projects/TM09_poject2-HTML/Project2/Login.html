@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Login page</title>
+        <meta charset="utf-8">
+        <style>
+            #p1{
+                text-align: center;
+                font-size: 30px;
+                font-weight: 700;
+            }
+            table{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            th, td{
+                text-align: left;
+                padding: 10px;
+            }
+            #p2{
+                text-align: center;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="p1">Login page</p>
+        <form name="login form" action="some servlet" method="POST">
+            <div>
+                <table>
+                    <tr>
+                        <td> 
+                            <label for="uname">Enter User Name:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="uname" required autofocus >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <label for="upwd">Password:</label>
+                        </td>
+                        <td>
+                            <input type="password" id="upwd" minlength = "6" pattern="^(?=.*?[a-z])(?=.*?[A-Z])(?=.*?[0-9]).*$" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <input type="submit" value="Login">
+                            <input type="reset">
+                        </td>
+                    </tr>
+                </table>
+                <p id="p2"><a href="Registration.html">New User</a></p>
+            </div>
+        </form>
+    </body>
+</html>

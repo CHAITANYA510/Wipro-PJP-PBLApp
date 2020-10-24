@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping>
+    <class name="com.wipro.bean.Employee" table="Employee_table_2">
+    	<id name="ID" column="Employee_ID" type="int">
+    		<generator class="sequence">
+        		<param name="sequence">ID_generator</param>
+    		</generator>
+    	</id>
+    	<property name="name" column="Employee_Name" type="string" length="10"></property>
+    	<property name="gender" column="Gender" type="string" length="6"></property>
+    	<property name="designation" column="Designation" type="string" length="15"></property>
+    	<property name="salary" column="Salary" type="float"></property>
+    	<property name="city" column="City" type="string" length="10"></property>
+    	<property name="emailID" column="EmailID" type="string" length="20"></property>
+    	<property name="mobileNo" column="Phone_number" type="long"></property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Delete</title>
+        <style>
+            h1{
+                text-align:center;
+                font-size: 35px;
+            }
+            body{
+                background-color: skyblue;
+            }
+            table{
+                margin-right: auto;
+                margin-left: auto;
+            }
+            td{
+                padding: 3px;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="font-size: 20px;">
+            <h1>Delete Employee</h1>
+            <form name="DeleteEmployee" action="DeleteEmployeeServlet" method="get">
+                <table>
+                    <tr>
+                        <td><label for="name">Enter name</label></td>
+                        <td><input type="text" id="name" name="name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="id">Enter ID</label></td>
+                        <td><input type="number" id="id" name="id" min="1" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <input type="submit" value="Delete Employee">
+                            <input type="reset">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

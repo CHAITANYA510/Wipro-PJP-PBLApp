@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Registration Page</title>
+        <meta charset="utf-8">
+        <style>
+            #p1{
+                text-align: center;
+                font-size: 30px;
+                font-weight: 700;
+            }
+            table{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            th, td{
+                text-align: left;
+            }
+        </style>
+        <script>
+        function checkDate() {
+
+            var EnteredDate = document.getElementByName("date");
+            var date = EnteredDate.substring(0, 2);
+            var month = EnteredDate.substring(3, 5);
+            var year = EnteredDate.substring(6, 10);
+
+            var myDate = new Date(year, month - 1, date);
+            var today = new Date();
+            
+            document.write("Entered date "+myDate); 
+            document.write("Today's date "+today); 
+
+            if (myDate >= today) {
+                return true;
+            }
+            else {
+                alert("Entered date is less than today's date ");
+                return false;
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <p id="p1">Registration Form</p>
+        <form name="registration form" action="Application" method="POST">
+            <div>
+                <table>
+                    <tr>
+                        <td> 
+                            <label for="uname">User ID:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="uname" minlength="4" maxlength="8" required autofocus >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <label for="upwd">Password:</label>
+                        </td>
+                        <td>
+                            <input type="password" id="upwd" minlength = "6" pattern="^(?=.*?[a-z])(?=.*?[A-Z])(?=.*?[0-9]).*$" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <label for="DOB">Date Of Birth:</label>
+                        </td>
+                        <td>
+                            <input type="date" id="DOB" name="date" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <label for="gender">Gender:</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="gender" name = "gender">Male
+                            <input type="radio" name = "gender">Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <label for="state">State:</label>
+                        </td>
+                        <td>
+                            <select name="state" id="state" size="1">
+                                <option >Maharashtra</option>
+                                <option>Goa</option>
+                                <option>Delhi</option>
+                                <option>UP</option>
+                                <option>Gujrat</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <label for="number">Contact number:</label>
+                        </td>
+                        <td>
+                            <input type="number" id="number" name="number" min="0" minlength="10" maxlength="10">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <label for="address">Address:</label>
+                        </td>
+                        <td>
+                            <textarea  id="address" rows="4" cols="30" placeholder="Enter address here..."></textarea> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <input type="submit" value="Login" onclick="checkDate();">
+                            <input type="reset">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Project 2</title>
+<script>
+	function validate(){
+		
+		var pwd = document.registrationform.pwd.value;
+		var cpwd = document.registrationform.cpwd.value;
+		
+		if(pwd == cpwd){
+			if(pwd=="" || cpwd==""){
+				alert('Passwords cannot be empty');
+				return false;
+			}
+			return true;
+		}
+		else{
+			alert('Passwords does not match');
+			return false;
+		}
+	}
+</script>
+</head>
+<body>
+	<h1 style="text-align:center;">User registration portal</h1>
+	<form name="registrationform" method="get" action="NewUserServlet" onsubmit="return validate();">
+		<table style="margin-left:auto; margin-right:auto;">
+			<tr>
+				<td>Username:</td>
+				<td><input type="text" name="name"></td>
+			</tr>
+			<tr>
+				<td>User ID:</td>
+				<td><input type="number" name="ID" min="1"></td>
+			</tr>
+			<tr>
+				<td>User email:</td>
+				<td><input type="email" name="email"></td>
+			</tr>
+			<tr>
+				<td>Password:</td>
+				<td><input type="password" name="pwd"></td>
+			</tr>
+			<tr>
+				<td>Confirm password:</td>
+				<td><input type="password" name="cpwd"></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="submit" value="Store user information">
+					<input type="reset">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

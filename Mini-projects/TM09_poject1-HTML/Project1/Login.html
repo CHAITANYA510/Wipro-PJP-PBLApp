@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="utf-8">
+        <style>
+            p{
+                text-align: center;
+                color: darkblue;
+                font-size: 30px;
+                font-weight: 700;
+            }
+            table{
+                background-color: cyan;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            table, th, td {
+                border: 1px solid black;
+            }
+            th, td{
+                text-align: left;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Account Login</p>
+        <form name="login form" action="some servlet" method="POST">
+            <div>
+                <table>
+                    <tr>
+                        <td> 
+                            <label for="uname">User Name:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="uname" maxlength = "12" minlength = "8" required autofocus >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <label for="upwd">Password:</label>
+                        </td>
+                        <td>
+                            <input type="password" id="upwd" maxlength = "12" minlength = "8" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <input type="submit" value="Login" style="color: rgb(90, 72, 72);">
+                            <input type="reset" style="color: rgb(90, 72, 72);">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </body>
+</html>

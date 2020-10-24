@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up page</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body onload="displayTime()">
+        <h3 style="text-align: center; font-size: 25px;">Signup Page</h3>
+        <div>
+            <p id="date"></p>
+            <p id="time"></p>
+
+            <form name="SignUpForm" onsubmit="formValidation()" action="signUp" method="POST">
+            <table>
+                <tr>
+                    <td> 
+                        <label for="fname">First Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="fname" id="fname" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td> 
+                        <label for="lname">Last Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="lname" id="lname" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td> 
+                        <label for="upwd">Password:</label>
+                    </td>
+                    <td>
+                        <input type="password" name="upwd" id="upwd" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td> 
+                        <label for="upwdc">Confirm Password:</label>
+                    </td>
+                    <td>
+                        <input type="password" name="upwdc" id="upwdc" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td> 
+                        <label for="gender">Gender:</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="gender" name="gender" value="Male">Male
+                        <input type="radio" name="gender" value="Female">Female
+                        <input type="radio" name="gender" value="Other">Other
+                    </td>
+                </tr>
+                <tr>
+                    <td> 
+                        <label for="phoneNumber">Phone Number:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="phoneNumber" id="phoneNumber" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td> 
+                        <label for="DOB">DOB:</label>
+                    </td>
+                    <td>
+                        <input type="date" name="DOB" id="DOB" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td> 
+                        <label for="email">Email Address:</label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" id="email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button>Submit</button>
+                        <button>Reset</button>
+                    </td>
+                </tr>    
+            </table>
+            </form>
+            
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

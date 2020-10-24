@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Display</title>
+        <style>
+            h1{
+                text-align:center;
+                font-size: 35px;
+            }
+            body{
+                background-color: skyblue;
+            }
+            table{
+                margin-right: auto;
+                margin-left: auto;
+            }
+            td{
+                padding: 3px;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="font-size: 20px;">
+            <h1>Display Employee</h1>
+            <form name="DisplayEmployee" action="DisplayEmployeeServlet" method="get">
+                <table>
+                    <tr>
+                        <td><label for="id">Enter ID</label></td>
+                        <td><input type="number" id="id" name="id" min="1" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <input type="submit" value="Display Employee">
+                            <input type="reset">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

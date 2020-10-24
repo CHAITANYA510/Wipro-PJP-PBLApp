@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Project 1</title>
+<style>
+    div{
+        background-color: antiquewhite;
+    }
+    h1,h2{
+        text-align: center;
+    }
+    table{
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+<script>
+    function authentication(){
+
+        let message = "Required field!!";
+        let ID = document.BiddingInfo.ID.value;
+        let itemname = document.BiddingInfo.itemname.value;
+        let name =  document.BiddingInfo.name.value;
+        let email =  document.BiddingInfo.email.value;
+        let amount =  document.BiddingInfo.amount.value;
+        let formValidation = true;
+
+        if(ID == 0){
+            formValidation = false;
+            document.getElementById("p1").textContent = message;
+        }
+
+        if(itemname == ""){
+            formValidation = false;
+            document.getElementById("p2").textContent = message;
+        }
+
+        if(name == ""){
+            formValidation = false;
+            document.getElementById("p3").textContent = message;
+        }
+
+        if(email == ""){
+            formValidation = false;
+            document.getElementById("p4").textContent = message;
+        }
+
+        if(amount == 0){
+            formValidation = false;
+            document.getElementById("p5").textContent = message;
+        }
+        
+        if(!formValidation){
+           //alert("Data missing");
+            document.getElementById("toperrormessage1").textContent = "Required data missing!!";
+            document.getElementById("toperrormessage2").textContent = "Enter missing data and click Resubmit.";
+            return false;
+        }
+        else{
+        	return true;
+        }
+    }
+    
+</script>
+</head>
+<body>
+    <form name="BiddingInfo" method="get" action="DataAccessBean.jsp" onsubmit="return authentication();">
+    <div>
+        <h1>Welcome to AP Auctions.</h1>
+        <h2>Please Enter Bid.</h2>
+        <p id="toperrormessage1" style="color: red; text-align: center; font-size: 25px;"></p>
+        <p id="toperrormessage2" style="text-align: center; font-size: 25px;"></p>
+        <table>
+            <tr>
+                <td>Item ID:<span id="p1" style="color: red;"></span></td>
+                <td><input type="number" name="ID"></td>
+            </tr>
+            <tr>
+                <td>Item Name:<span id="p2" style="color: red;"></span></td>
+                <td><input type="text" name="itemname"></td>
+            </tr>
+            <tr>
+                <td>Your Name:<span id="p3" style="color: red;"></span></td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>Your Email Address:<span id="p4" style="color: red;"></span></td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Amount Bid:<span id="p5" style="color: red;"></span></td>
+                <td><input type="number" name="amount"></td>
+            </tr>
+            <tr>
+                <td>Auto-increment bid to match other bidders?</td>
+                <td><input type="checkbox" name="autobidders"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Submit Bid">
+                    <input type="reset">
+                </td>
+            </tr>
+        </table>
+        <span id="p6" style="color: red; text-align: center;"></span>
+    </div>  
+    </form>
+</body>
+</html>

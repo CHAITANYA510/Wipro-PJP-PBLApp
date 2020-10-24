@@ -1,0 +1,51 @@
+body{
+    background-color: purple;
+}
+
+p{
+    text-align: right;
+    color: #000000;
+    font-size: 20px;
+}
+
+#time{
+    margin-top: 0cm;
+}
+
+#date{
+    margin-bottom: 0cm;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+th, td{
+    text-align: left;
+    padding: 5px;
+}
+
+div{
+    background-color: grey;
+}
+
+input{
+    background-color: white;
+}
+
+input:hover{
+    background-color: aqua;
+    box-shadow: aqua;
+}
+
+input:focus{
+    background-color: rgb(33, 161, 44);
+    color: white;
+    box-shadow: rgb(20, 136, 59);
+}
+
+button:hover{
+    background-color: red;
+    color: white;
+}
+
