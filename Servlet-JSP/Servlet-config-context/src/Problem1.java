@@ -21,7 +21,7 @@ public class Problem1 extends HttpServlet {
 		config = getServletConfig();
 		context = getServletContext();
 		text1 = config.getInitParameter("text1");
-		text2 = config.getInitParameter("text2");
+		text2 = config.getServletContext().getInitParameter("text2");
 	}
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
